@@ -3,13 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio Jorge Gavidia Ferrer</title>
+    <!--Css project-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--Dev Icon Fonts-->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
-    <h1>Jorge Gavidia Ferrer</h1>
-    <ul>
-        <br>
-        <h2>Hola esta es mi primera web</h2>
-    </ul>
+   <main id="container">
+        <aside id="bio-container">
+            <h2>Jorge Gavidia Ferrer</h2>
+            <img id="bio-image" src="img/Foto de perfil.jpg" alt="Jorge Gavidia Ferrer">
+            <p>Hola mi nombre es Jorge Gavidia, soy<span class="highlight">  DESARROLLADOR WEB</span></p>
+            <p id="welcome-text">Bienvenido!</p>
+            <ul id="social-container">
+                <li><a href="#" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+            <div id="email-container">
+                <ion-icon name="mail-outline"></ion-icon><a href="mailto:vitres8@gmail.com">vitres8@gmail.com</a>
+            </div>
+        </aside>
+        <section id="about-container">
+            <h1 id="name">Jorge Gavidia Ferrer</h1>
+            <p id="tittle"><span class="highlight">Desarrollador Fullstack</span></p>
+            <p class="description">Soy un desarrolador especializado en solucionar problemas de manera eficiente, conocimientos en el desarrollo de  paginas Web y aplicaciones Web, me gusta participar en los proyectos desde <span class="highlight">su definicion, reglas de negocio, levantamiento de los requerimientos hasta el Deploy de la aplicacion</span> </p>
+            <p class="description">Actuo en <span class="highlight">Front-end</span> y <span class="highlight">Back-end</span></p>
+            <a href="#" id="btn-projects"><ion-icon name="share-social-outline"></ion-icon><span>Ver Proyectos</span></a>
+            <h2 id="skill-section-tittle">Mis Skills</h2>
+            <div id="skill-container">
+                <div class="skill-boxs">
+                    <p class="skill-tittle">Front-end</p>
+                    <i class="devicon-html5-plain colored"></i>
+                    <i class="devicon-css3-plain colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                </div>
+                <div class="skill-boxs">
+                    <p class="skill-tittle">Back-end</p>
+                    <i class="devicon-java-plain colored"></i>
+                    <i class="devicon-node.js-plain colored"></i>
+                </div>
+                <div class="skill-boxs">
+                    <p class="skill-tittle">Databases</p>
+                    <i class="devicon-mysql-plain colored"></i>
+                </div>
+                <div class="skill-boxs">
+                    <p class="skill-tittle">Front-end Frameworks</p>
+                    <i class="devicon-react-plain colored"></i>
+                </div>
+                <div class="skill-boxs">
+                    <p class="skill-tittle">Back-end Frameworks</p>
+                    <i class="devicon-spring-original-wordmark colored"></i>
+                </div>
+                <div class="skill-boxs">
+                    <p class="skill-tittle">Tools</p>
+                    <i class="devicon-linux-plain"></i>
+                    <i class="devicon-vscode-plain colored"></i>
+                    <i class="devicon-git-plain colored"></i>
+                    <i class="devicon-opencv-plain colored"></i>
+                    <i class="devicon-docker-plain colored"></i>
+                </div>
+            </div>
+        </section>
+   </main>
+    <!--Ion ICons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
