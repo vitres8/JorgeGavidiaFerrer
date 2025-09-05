@@ -30,11 +30,12 @@
                     alt="Jorge Gavidia Ferrer"
                 />
                 <p>
-                    Hola mi nombre es Jorge Gavidia Ferrer, soy<span class="highlight">
-                        DESARROLLADOR WEB</span
-                    >
+                    Hola mi nombre es <br />
+                    Jorge Gavidia Ferrer <br />
+                    <br />
+                    <span class="highlight"> DESARROLLADOR WEB</span>
                 </p>
-                <p id="welcome-text">Bienvenido!</p>
+                <p id="welcome-text">Bienvenido</p>
                 <ul id="social-container">
                     <li>
                         <a href="#" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
@@ -80,8 +81,9 @@
                     </div>
                     <div class="skill-boxs">
                         <p class="skill-tittle">Back-end</p>
+                        <i class="devicon-typescript-plain colored"></i>
                         <i class="devicon-java-plain colored"></i>
-                        <i class="devicon-node.js-plain colored"></i>
+                        <i class="devicon-nodejs-plain-wordmark colored"></i>
                     </div>
                     <div class="skill-boxs">
                         <p class="skill-tittle">Databases</p>
@@ -90,6 +92,7 @@
                     <div class="skill-boxs">
                         <p class="skill-tittle">Front-end Frameworks</p>
                         <i class="devicon-react-plain colored"></i>
+                        <i class="devicon-angularjs-plain colored"></i>
                     </div>
                     <div class="skill-boxs">
                         <p class="skill-tittle">Back-end Frameworks</p>
@@ -107,9 +110,34 @@
             </section>
         </main>
 
-        <div class="container-ejercicio-01">
-            <div class="title-01">Unit Converter</div>
-            <div class="development-01"></div>
+        <div class="container-exercises">
+            <div class="container-ejercicio-01">
+                <div class="title-01">Unit Converter (Km, cm, mts, mm)</div>
+                <div class="development-01">
+                    <label for="">Input the quantity</label>
+                    <input type="number" class="input-01" name="input-01" placeholder="0" />
+                    <label for="from">From:</label>
+                    <select name="from-01" id="from-01" class="select-01">
+                        <option value="mm"></option>
+                        <option value="mm">Milimeters</option>
+                        <option value="cm">Centimeters</option>
+                        <option value="m">Meters</option>
+                        <option value="km">Kilometers</option>
+                    </select>
+                    <label for="">For:</label>
+                    <select name="for-01" id="for-01" class="select-01">
+                        <option value="mm"></option>
+                        <option value="mm">Milimeters</option>
+                        <option value="cm">Centimeters</option>
+                        <option value="m">Meters</option>
+                        <option value="km">Kilometers</option>
+                    </select>
+                    <button class="button-01">Convert</button>
+                    <label for="">Result</label>
+                    <input type="number" class="input-01" id="output-01" name="input-01" readonly />
+                    <div class="message-01"></div>
+                </div>
+            </div>
         </div>
 
         <!--Ion ICons-->
