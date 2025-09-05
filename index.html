@@ -19,6 +19,8 @@
             type="text/css"
             href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
         />
+        <!--Scripts de ejercicios-->
+        <script src="scripts01.js" defer></script>
     </head>
     <body>
         <main id="container">
@@ -111,31 +113,44 @@
         </main>
 
         <div class="container-exercises">
-            <div class="container-ejercicio-01">
-                <div class="title-01">Unit Converter (Km, cm, mts, mm)</div>
-                <div class="development-01">
-                    <label for="">Input the quantity</label>
-                    <input type="number" class="input-01" name="input-01" placeholder="0" />
-                    <label for="from">From:</label>
-                    <select name="from-01" id="from-01" class="select-01">
-                        <option value="mm"></option>
-                        <option value="mm">Milimeters</option>
-                        <option value="cm">Centimeters</option>
-                        <option value="m">Meters</option>
-                        <option value="km">Kilometers</option>
-                    </select>
-                    <label for="">For:</label>
-                    <select name="for-01" id="for-01" class="select-01">
-                        <option value="mm"></option>
-                        <option value="mm">Milimeters</option>
-                        <option value="cm">Centimeters</option>
-                        <option value="m">Meters</option>
-                        <option value="km">Kilometers</option>
-                    </select>
-                    <button class="button-01">Convert</button>
-                    <label for="">Result</label>
-                    <input type="number" class="input-01" id="output-01" name="input-01" readonly />
-                    <div class="message-01"></div>
+            <div class="container-exercise-01">
+                <h2 class="title-exercicse-01">Form Desing / Feature / Funcionality</h2>
+                <div class="container-secondary-01">
+                    <h1 class="title-01">Unit Converter (Km, cm, mts, mm)</h1>
+                    <div class="development-01">
+                        <label for="">Input the quantity</label>
+                        <input
+                            type="number"
+                            id="input-01"
+                            class="input-01"
+                            name="input-01"
+                            placeholder="0"
+                        />
+                        <label for="from">From:</label>
+                        <select name="from-01" id="from-01" class="select-01">
+                            <option value="mm">Milimeters</option>
+                            <option value="cm">Centimeters</option>
+                            <option value="m">Meters</option>
+                            <option value="km">Kilometers</option>
+                        </select>
+                        <label for="">To:</label>
+                        <select name="to-01" id="to-01" class="select-01">
+                            <option value="mm">Milimeters</option>
+                            <option value="cm">Centimeters</option>
+                            <option value="m">Meters</option>
+                            <option value="km">Kilometers</option>
+                        </select>
+                        <button id="button-01" class="button-01">Convert</button>
+                        <label for="result" class="result">Result:</label>
+                        <input
+                            type="number"
+                            class="input-01"
+                            id="output-01"
+                            name="input-01"
+                            readonly
+                        />
+                        <div id="message-01" class="message-01"></div>
+                    </div>
                 </div>
             </div>
         </div>
