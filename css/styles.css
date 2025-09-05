@@ -180,6 +180,12 @@
     margin-right: 10px;
 }
 
+.container-ejercicio-01 {
+    border: 1px rebeccapurple;
+    width: 100%;
+    height: 200px;
+}
+
 /* Mobile */
 
 @media (max-width: 450px) {
