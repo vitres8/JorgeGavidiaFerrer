@@ -191,28 +191,45 @@
 }
 /*ejercicio 01*/
 
-.container-exercise-01 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.container-exercise {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    border-bottom: 5px solid #293544;
 }
 
-.container-secondary-01 {
+.container-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.title-exercise {
+    font-family: "Orbitron";
+    text-shadow: 0 0 0px #00ffcc, 0 0 5px #00cc99;
+    font-weight: 500;
+    color: var(--main-color);
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    gap: 35px;
+    width: 200px;
+    letter-spacing: 2px;
+}
+
+.container-secondary {
     display: flex;
     flex-direction: column;
     background: var(--about-bg-color);
-    width: 330px;
+    width: 400px;
     height: 500px;
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-.title-exercicse-01 {
-    color: var(--main-color);
-    display: grid;
-    gap: 20px;
-}
 .title-01 {
     display: flex;
     color: var(--main-color);
@@ -245,11 +262,11 @@
     border-radius: 5px;
     text-decoration: none;
     transition: 0.5s;
-    margin: 15px 12px;
-
+    margin: 20px 12px;
     padding: 8px 20px;
     width: 100px;
     text-align: center;
+    justify-self: center;
 }
 
 .result {
@@ -280,9 +297,141 @@
 .message-01 {
     display: flex;
     color: var(--main-color);
-    margin: auto;
+    margin: 15px auto;
     font-size: small;
     font-weight: normal;
+}
+
+/*Ejercicio 02*/
+
+.development-02 {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    color: var(--main-text-color);
+    border: 1px solid var(--main-color);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.watch-numbers-02 {
+    font-size: 3rem;
+    padding: 15px 0;
+    color: var(--main-color);
+    justify-self: center;
+}
+.container-position-02 {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-auto-flow: row;
+    align-content: center;
+}
+/*ejericio 03 citaciones*/
+
+.development-03 {
+    width: 380px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.quotes-content {
+    width: 100%;
+    height: 200px;
+    color: var(--main-text-color);
+}
+.button-03 {
+    font-size: 16px;
+    color: var(--main-text-color);
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+    padding: 8px 10px;
+    width: 200px;
+    cursor: pointer;
+}
+
+/*ejercicio 04 matrices*/
+
+.development-04 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.container-input-04 {
+    color: var(--main-text-color);
+    display: flex;
+    margin: 20px auto;
+    align-items: center;
+}
+
+.input-04 {
+    width: 40px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    align-self: center;
+    padding-left: 15px;
+    margin: auto 10px;
+}
+
+.input-04::-webkit-outer-spin-button,
+.input-04::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.button-04 {
+    font-size: 16px;
+    color: var(--main-text-color);
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+    padding: 8px 20px;
+    width: 100px;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.button-04:hover {
+    background-color: transparent;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.insert-size {
+    width: 110px;
+    align-self: center;
+}
+
+.container-result-04 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--main-color);
+}
+
+.matrix-generated {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
 }
 
 /* Mobile */
@@ -333,8 +482,6 @@
     .skill-boxs i {
         font-size: 60px;
     }
-
-    /*main*/
 
     /*ejercicios*/
 
@@ -430,7 +577,4 @@
         font-size: small;
         font-weight: lighter;
     }
-
-    /*ejercicio 01*/
-    /*ejercicios*/
 }

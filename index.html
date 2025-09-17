@@ -19,8 +19,18 @@
             type="text/css"
             href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
         />
+
+        <!--Fonte-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap"
+            rel="stylesheet"
+        />
+
         <!--Scripts de ejercicios-->
         <script src="scripts01.js" defer></script>
+        <script src="scripts02.js" defer></script>
+        <script src="scripts03.js" defer></script>
+        <script src="scripts04.js" defer></script>
     </head>
     <body>
         <main id="container">
@@ -113,52 +123,110 @@
         </main>
 
         <div class="container-exercises">
-            <div class="container-exercise-01">
-                <h2 class="title-exercicse-01">
-                    <span class="span-title-01">Form Desing</span>
-                    <span class="span-title-01">Feature</span>
-                    <span class="span-title-01">Funcionality</span>
-                </h2>
-                <div class="container-secondary-01">
-                    <h1 class="title-01">Unit Converter (Km, cm, mts, mm)</h1>
-                    <div class="development-01">
-                        <label for="">Input the quantity</label>
-                        <input
-                            type="number"
-                            id="input-01"
-                            class="input-01"
-                            name="input-01"
-                            placeholder="0"
-                        />
-                        <label for="from">From:</label>
-                        <select name="from-01" id="from-01" class="select-01">
-                            <option value="mm">Milimeters</option>
-                            <option value="cm">Centimeters</option>
-                            <option value="m">Meters</option>
-                            <option value="km">Kilometers</option>
-                        </select>
-                        <label for="">To:</label>
-                        <select name="to-01" id="to-01" class="select-01">
-                            <option value="mm">Milimeters</option>
-                            <option value="cm">Centimeters</option>
-                            <option value="m">Meters</option>
-                            <option value="km">Kilometers</option>
-                        </select>
-                        <button id="button-01" class="button-01">Convert</button>
-                        <label for="result" class="result">Result:</label>
-                        <input
-                            type="number"
-                            class="input-01"
-                            id="output-01"
-                            name="input-01"
-                            readonly
-                        />
-                        <div id="message-01" class="message-01"></div>
+            <div class="container-exercise">
+                <div class="container-content">
+                    <h2 class="title-exercise">Form Desing</h2>
+                </div>
+                <div class="container-content">
+                    <div class="container-secondary">
+                        <h1 class="title-01">Unit Converter (Km, cm, mts, mm)</h1>
+                        <div class="development-01">
+                            <label for="">Input the quantity</label>
+                            <input
+                                type="number"
+                                id="input-01"
+                                class="input-01"
+                                name="input-01"
+                                placeholder="0"
+                            />
+                            <label for="from">From:</label>
+                            <select name="from-01" id="from-01" class="select-01">
+                                <option value="mm">Milimeters</option>
+                                <option value="cm">Centimeters</option>
+                                <option value="m">Meters</option>
+                                <option value="km">Kilometers</option>
+                            </select>
+                            <label for="">To:</label>
+                            <select name="to-01" id="to-01" class="select-01">
+                                <option value="mm">Milimeters</option>
+                                <option value="cm">Centimeters</option>
+                                <option value="m">Meters</option>
+                                <option value="km">Kilometers</option>
+                            </select>
+                            <button id="button-01" class="button-01">Convert</button>
+                            <label for="result" class="result">Result:</label>
+                            <input
+                                type="number"
+                                class="input-01"
+                                id="output-01"
+                                name="input-01"
+                                readonly
+                            />
+                            <div id="message-01" class="message-01"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-exercise">
+                <div class="container-content">
+                    <h2 class="title-exercise">
+                        <span class="span-title-01">Time</span>
+                    </h2>
+                </div>
+                <div class="container-content">
+                    <div class="container-secondary">
+                        <div class="container-position-02">
+                            <h1 class="title-01">Digital Watch</h1>
+                            <div class="development-02">
+                                <span class="watch-numbers-02" id="hours">00</span>
+                                <span class="watch-numbers-02" id="divider">:</span>
+                                <span class="watch-numbers-02" id="minutes">00</span>
+                                <span class="watch-numbers-02" id="divider">:</span>
+                                <span class="watch-numbers-02" id="seconds">00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-exercise">
+                <div class="container-content">
+                    <h2 class="title-exercise">Quotes Generator</h2>
+                </div>
+                <div class="container-content">
+                    <div class="container-secondary">
+                        <h1 class="title-01">Quotes</h1>
+                        <div class="development-03">
+                            <div id="quotes-content" class="quotes-content"></div>
+                            <button id="quotes-button" class="button-03">Generate Quotes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-exercise">
+                <div class="container-content">
+                    <h2 class="title-exercise">Matriz</h2>
+                </div>
+                <div class="container-content">
+                    <div class="container-secondary">
+                        <h1 class="title-01">Square Matrix Operations</h1>
+                        <div class="development-04">
+                            <div class="container-input-04">
+                                <label class="insert-size" for="">Size of matrix:</label>
+                                <input id="input-04" class="input-04" type="number" />
+                                <button id="button-04" class="button-04">Generate</button>
+                            </div>
+                            <div class="container-result-04">
+                                <h2 class="title-01">Matrix</h2>
+                                <table id="matrix-generated" class="matrix-generated"></table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <!--Ion ICons-->
         <script
             type="module"
